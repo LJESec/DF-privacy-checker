@@ -39,6 +39,6 @@ rm heatmap_file_comparison.csv
 
 cd /home/nodejs/df-privacy-checker_tools/DF-privacy-checker/
 
-python /home/nodejs/df-privacy-checker_tools/DF-privacy-checker/integration_pipeline_transform_and_compare.py >> "./../DF-privacy_aware_file_checker/results/entropy_cosine_compare/output_$(echo -n $1 | base64 --decode)_final.csv"
-
+#python /home/nodejs/df-privacy-checker_tools/DF-privacy-checker/integration_pipeline_transform_and_compare.py >> "./../DF-privacy_aware_file_checker/results/entropy_cosine_compare/output_$(echo -n $1 | base64 --decode)_final.csv"
+python /home/nodejs/df-privacy-checker_tools/DF-privacy-checker/integration_pipeline_transform_and_compare.py >> "./../DF-privacy_aware_file_checker/results/differentiator/output_$(echo -n $1 | base64 --decode)_final.csv"
 
